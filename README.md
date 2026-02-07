@@ -21,7 +21,7 @@ Sur **Watts Up**, j'ai combiné ces compétences en assurant les rôles de **Lea
 Au-delà du code, j'ai pris la responsabilité totale de la partie **Ops** : j'ai monté, sécurisé et déployé **seule** l'intégralité de l'infrastructure sur mes propres serveurs.
 
 > **🤝 Pourquoi ce partage ?**
-> Je partage mes documents officiels pour aider les prochains candidats à visualiser les attentes du jury. *Servez-vous en pour apprendre et structurer votre projet, pas pour copier !*
+> Je partage mes documents officiels pour aider les prochains candidats à visualiser les attentes du jury. *Servez-vous en pour apprendre et structurer votre projet. Je vous souhaite bon courage pour vos épreuves.*
 
 ---
 
@@ -91,7 +91,7 @@ Retrouvez les documents présentés pour la validation de mon titre :
 
 ---
 
-<p align="center">
+<p>
   Réalisé avec le ❤️ par <strong>Camille Céleste Covarel</strong> (Promotion 2025)
 </p>
     
