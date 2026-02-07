@@ -1,61 +1,84 @@
-⚡ Watts Up - Plateforme de Réservation de Bornes IRVE
+# ⚡ Watts Up | Plateforme de Réservation IRVE
 
-    Note aux futurs candidats : Ce dépôt est partagé dans une démarche de transmission. Vous y trouverez mes dossiers de projet et cahiers des charges pour vous aider à comprendre les attendus du titre professionnel Développeur Web et Web Mobile (DWWM). Servez-vous en comme source d'inspiration pour structurer votre propre réussite !
+<p align="center">
+  <img src="https://img.shields.io/badge/Role-Lead_Tech_%26_PO-61dafb?style=for-the-badge&logo=react" alt="Role">
+  <img src="https://img.shields.io/badge/Backend-Node.js_%26_PostGIS-339933?style=for-the-badge&logo=node.js" alt="Backend">
+  <img src="https://img.shields.io/badge/Infrastructure-Docker_%26_CI--CD-2496ed?style=for-the-badge&logo=docker" alt="Infra">
+</p>
 
-🌟 Le Projet
+---
 
-Watts Up est un prototype d'application (MVP) réalisé pour la société fictive GeoCode. L'objectif : offrir une solution fluide et robuste pour localiser et réserver des bornes de recharge électrique parmi un parc national de plus de 136 000 points de charge.
+## 👤 À propos de moi
 
-L'application a été pensée Mobile First, garantissant une expérience utilisateur optimale en situation de mobilité.
-🛠 Mon Rôle : Lead Tech & Product Owner
+Salut ! 👋 Moi, c'est **Camille Céleste Covarel**.
 
-Sur ce projet réalisé en binôme (Agile Scrum), j'ai piloté la vision technique et l'architecture globale. Mon focus s'est porté sur la solidité du Backend et l'industrialisation du déploiement.
-Mes réalisations majeures :
+Développeuse Fullstack avec une forte affinité pour le **Backend** et l'**Architecture logicielle**, j'ai réalisé ce projet dans le cadre de mon Titre Professionnel "Développeur Web et Web Mobile" (DWWM) fin 2025 à la **Wild Code School Toulouse**.
 
-    Architecture BDD Spatiale : Implémentation de PostGIS pour gérer des requêtes de proximité complexes sur des milliers de coordonnées GPS avec une latence minimale.
+Sur **Watts Up**, j'ai endossé les rôles de **Lead Tech** et **Product Owner**. Mon objectif était de construire une infrastructure robuste, capable d'absorber des volumes de données importants (Open Data IRVE) tout en garantissant une expérience fluide et sécurisée.
 
-    Ingénierie de la Data : Développement d'un moteur d'importation CSV en Streaming Node.js. Résultat : traitement de 136k lignes sans saturation de la RAM (une prouesse technique pour ce niveau de formation).
+> **🤝 Pourquoi ce partage ?**
+> Je sais à quel point la préparation d'un titre pro peut être intense. Je partage mes documents officiels (Dossier de Projet, Cahier des Charges, etc.) pour aider les prochains candidats à visualiser les attentes du jury et la structure d'un projet de fin d'études réussi. 
+> *Servez-vous en pour apprendre et structurer votre pensée, pas pour copier-coller !*
 
-    Logique Métier Critique : Conception du cycle de vie des réservations (30 min) avec des tâches automatisées via Node-Cron et une protection stricte contre la double-réservation.
+---
 
-    DevOps & Industrialisation : Mise en place d'une pipeline CI/CD via GitHub Actions avec build d'images Docker et déploiement automatisé.
+## 🌟 Présentation du projet
+**Watts Up** est une solution "Mobile First" développée pour répondre aux défis de la mobilité électrique. L'application permet de gérer et de réserver des points de charge parmi un parc national de plus de **136 000 bornes**.
 
-🚀 Stack Technique (La "Heavy" Stack)
-Secteur	Technologies
-Backend	Node.js, Express, TypeScript, Sequelize ORM
-Frontend	React, Vite.js, TanStack Query, MapLibre GL JS
-Database	PostgreSQL + PostGIS (Extension spatiale)
-Infrastructure	Docker, GitHub Actions, Nginx, Debian 13
-Sécurité	JWT (HttpOnly), Bcrypt, Express-rate-limit, UUID v4
-📁 Ressources pour l'examen (Dossiers de Certification)
+### 🎯 Objectifs du MVP
+* **Localisation précise** via une carte interactive haute performance.
+* **Réservation intelligente** de 30 minutes avec gestion automatisée du cycle de vie.
+* **Back-office Admin** pour le monitoring et la mise à jour massive des données.
 
-Pour aider la communauté et les futurs apprenants de la Wild Code School (ou d'ailleurs), je mets à disposition les documents officiels présentés au jury :
+---
 
-    📄 Dossier de Projet : Le cœur du réacteur. Analyse technique, choix d'architecture, modélisation et bilans.
+## 🛠 La "Sauce" Technique (Why it biches ✨)
 
-    📄 Résumé du Cahier des Charges : La vision fonctionnelle et les besoins utilisateurs.
+En tant que Lead Tech, j'ai fait des choix d'architecture ambitieux pour dépasser le simple CRUD :
 
-    📄 Support de Présentation : Le deck utilisé pour le passage devant le jury.
+### 🛰️ Géospatial & Performance
+* **PostGIS :** Utilisation de la puissance de PostgreSQL et de son extension spatiale pour des requêtes de proximité ultra-rapides.
+* **MapLibre GL JS :** Rendu GPU pour une fluidité absolue sur mobile, même avec une densité de points importante.
 
-⚙️ Installation & Lancement
+### 🏎️ Data Engineering
+* **Streaming CSV :** L'import des 136k lignes de données gouvernementales est géré via un système de **Streaming Node.js**. Résultat : zéro saturation de la RAM et une stabilité serveur totale.
 
-Le projet est entièrement containerisé pour garantir une parité totale entre les environnements de développement et de production.
+### ⛓️ DevOps & Sécurité
+* **CI/CD :** Pipeline automatisée via GitHub Actions (Build, Test & Deploy).
+* **Conteneurisation :** Environnement 100% Dockerisé pour une parité Dev/Prod parfaite.
+* **Hardening :** JWT en cookies HttpOnly, UUID v4 pour contrer l'énumération, et protection contre le brute-force via `express-rate-limit`.
 
-    Clonage & Config :
-    Bash
+---
 
-    git clone https://github.com/votre-username/watts-up.git
-    cp .env.example .env
+## 🏗 Stack Technique
 
-    Déploiement Docker :
-    Bash
+| Backend | Frontend | Infra / Ops |
+| :--- | :--- | :--- |
+| **Node.js** / **TypeScript** | **React** / Vite.js | **Docker** & Compose |
+| **PostgreSQL** / **PostGIS** | TanStack Query | GitHub Actions |
+| Sequelize ORM | MapLibre GL JS | Nginx / Debian 13 |
+| Node-Cron | Tailwind CSS | JWT / Bcrypt |
 
-    docker compose up -d --build
+---
 
-    Accès : L'application est disponible sur localhost:5173. Les migrations Sequelize s'exécutent automatiquement pour initialiser la base PostGIS.
+## 📁 Ressources pour l'examen
 
-💡 Un mot sur la performance
+Retrouvez ci-dessous les documents que j'ai présentés pour valider mon titre :
 
-Contrairement aux solutions classiques type Leaflet, nous avons opté pour MapLibre GL JS pour exploiter le rendu GPU. Couplé à notre backend optimisé, l'affichage de milliers de bornes reste fluide, même sur des appareils mobiles d'entrée de gamme.
+* 📘 [**Dossier de Projet**](./camille_celeste_covarel_dossier_projet.pdf) : Analyse technique profonde, modélisation BDD et bilans.
+* 📙 [**Résumé du Cahier des Charges**](./Covarel_Camille_Resume_de_cahier_des_charges.pdf) : Vision produit et périmètre fonctionnel.
+* 🖥️ [**Support de Présentation Jury**](./DWWM_Presentation.pdf) : Le deck utilisé pour l'oral final.
 
-Réalisé avec passion par Camille Céleste Covarel - 2025
+---
+
+## ⚙️ Installation
+
+```bash
+# 1. Cloner le repo
+git clone [https://github.com/votre-compte/watts-up.git](https://github.com/votre-compte/watts-up.git)
+
+# 2. Setup l'environnement
+cp .env.example .env
+
+# 3. Lancer l'infrastructure
+docker compose up -d --build
