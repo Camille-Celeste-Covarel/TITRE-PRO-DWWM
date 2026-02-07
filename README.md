@@ -1,6 +1,6 @@
 # ⚡ Watts Up | Plateforme de Réservation IRVE
 
-<p align="center">
+<p>
   <img src="https://img.shields.io/badge/Role-Lead_Tech_%26_DevOps-61dafb?style=for-the-badge&logo=react" alt="Role">
   <img src="https://img.shields.io/badge/Backend-Node.js_%26_PostGIS-339933?style=for-the-badge&logo=node.js" alt="Backend">
   <img src="https://img.shields.io/badge/Infrastructure-Self_Hosted_%26_Docker-2496ed?style=for-the-badge&logo=linux" alt="Infra">
