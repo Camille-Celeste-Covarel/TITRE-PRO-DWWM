@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Role-Lead_Tech_%26_DevOps-61dafb?style=for-the-badge&logo=react" alt="Role">
   <img src="https://img.shields.io/badge/Backend-Node.js_%26_PostGIS-339933?style=for-the-badge&logo=node.js" alt="Backend">
-  <img src="https://img.shields.io/badge/Infrastructure-Docker_%26_CI--CD-2496ed?style=for-the-badge&logo=docker" alt="Infra">
+  <img src="https://img.shields.io/badge/Infrastructure-Self_Hosted_%26_Docker-2496ed?style=for-the-badge&logo=linux" alt="Infra">
 </p>
 
 ---
@@ -15,9 +15,10 @@ Salut ! 👋 Moi, c'est **Camille Céleste Covarel**.
 Développeuse Fullstack avec une spécialisation marquée en **Backend** et **DevOps**, j'ai validé mon Titre Professionnel "Développeur Web et Web Mobile" (DWWM) fin 2025 à la **Wild Code School Toulouse**.
 
 ### 🎨 Un parcours hybride : de l'image au code
-Avant de plonger dans le monde du développement, j'ai évolué en tant que **graphiste** et **photographe**. Ce bagage créatif est aujourd'hui une force majeure : il m'apporte une rigueur visuelle, un œil critique sur l'UI/UX et une capacité à concevoir des interfaces aussi esthétiques que fonctionnelles.
+Avant de plonger dans le monde du développement, j'ai évolué en tant que **graphiste** et **photographe**. Ce bagage créatif est aujourd'hui une force majeure : il m'apporte une rigueur visuelle et une capacité à concevoir des interfaces aussi esthétiques que fonctionnelles.
 
-Sur **Watts Up**, j'ai combiné ces deux mondes en tant que **Lead Tech**, **Product Owner** et **DevOps**, veillant à ce que la robustesse de l'infrastructure serve une expérience utilisateur impeccable.
+Sur **Watts Up**, j'ai combiné ces compétences en assurant les rôles de **Lead Tech** et **Product Owner**. 
+Au-delà du code, j'ai pris la responsabilité totale de la partie **Ops** : j'ai monté, sécurisé et déployé **seule** l'intégralité de l'infrastructure sur mes propres serveurs.
 
 > **🤝 Pourquoi ce partage ?**
 > Je partage mes documents officiels pour aider les prochains candidats à visualiser les attentes du jury. *Servez-vous en pour apprendre et structurer votre projet, pas pour copier !*
@@ -25,7 +26,7 @@ Sur **Watts Up**, j'ai combiné ces deux mondes en tant que **Lead Tech**, **Pro
 ---
 
 ## 🚀 Démo en ligne
-Le projet est déployé et testable en live :  
+Le projet est déployé sur mon infrastructure personnelle et testable en live :  
 👉 **[watts-up.anamnesis.ovh](https://watts-up.anamnesis.ovh/)**
 
 ---
@@ -42,14 +43,14 @@ Le projet est déployé et testable en live :
 
 ## 🛠 Expertise & Architecture (Why it biches ✨)
 
-### 🏗️ Casquette DevOps & Infra
-J'ai conçu une infrastructure automatisée et résiliente pour garantir la disponibilité du service :
-* **CI/CD :** Automatisation complète via GitHub Actions pour le build et le déploiement.
-* **Conteneurisation :** Orchestration via Docker Compose (PostgreSQL, Express, React, Nginx).
-* **Observabilité :** Monitoring des imports de données en temps réel via WebSockets.
+### 🏗️ DevOps : Infrastructure & Autonomie
+Contrairement aux solutions "clé en main" (PaaS), j'ai fait le choix de la maîtrise totale de l'hébergement :
+* **Self-Hosted :** Configuration manuelle d'un VPS (Debian 13) et mise en place d'un Reverse Proxy (Nginx).
+* **Parité des environnements :** Création et gestion stricte des environnements de **Staging** et de **Production** via Docker pour éviter l'effet "ça marche sur ma machine".
+* **CI/CD Totale :** Pipeline GitHub Actions écrite de zéro pour builder les images, tester et déployer automatiquement sur mon serveur à chaque push validé.
 
 ### 🛰️ Géospatial & Performance
-* **PostGIS :** Utilisation intensive de l'extension spatiale de PostgreSQL pour des requêtes de proximité complexes.
+* **PostGIS :** Utilisation intensive de l'extension spatiale de PostgreSQL pour des requêtes de proximité complexes (Radius).
 * **MapLibre GL JS :** Rendu GPU pour une fluidité absolue sur mobile.
 
 ### 🏎️ Data Engineering
