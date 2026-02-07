@@ -71,14 +71,4 @@ Retrouvez ci-dessous les documents que j'ai présentés pour valider mon titre :
 
 ---
 
-## ⚙️ Installation
-
-```bash
-# 1. Cloner le repo
-git clone [https://github.com/votre-compte/watts-up.git](https://github.com/votre-compte/watts-up.git)
-
-# 2. Setup l'environnement
-cp .env.example .env
-
-# 3. Lancer l'infrastructure
-docker compose up -d --build
+<p align="center"> Réalisé avec le ❤️ par <strong>Camille Céleste Covarel</strong> (Promotion 2025) </p>
